@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+
+{% block files%}
+
+<style>
+h1 {
+    color: white;
+}
+</style>
+
+{% endblock files%}
+{% block output %}
+<h1><pre> The predicted price is {{ output }}</pre></h1>
+{% endblock%}

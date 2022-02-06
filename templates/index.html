@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selling Price</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}" >
+        {% block files %}
+        {% endblock files %}
+    </head>
+        <body>
+            <div class="home-container">
+              
+
+              <form class="home-form" action="http://127.0.0.1:5000/predict" method="post">
+                {% block output %}
+                <label for="km driven" class="home-label">KM DRIVEN</label>
+                <input name = "km driven" type="number" id="km driven" class="home-textinput input" />
+                <label for="fuel" class="home-text">FUEL</label>
+                <select id="fuel" name="fuel" class="home-textinput01 input">
+                    <option value="" disabled selected hidden>    </option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="LPG">LPG</option>
+                    <option value="CNG">CNG</option>
+                </select>
+                <label for="seller type" class="home-label1">SELLER TYPE</label>
+                <select id="seller type" name="seller type" class="home-textinput02 input">
+                    <option value="" disabled selected hidden>    </option>
+                    <option value="Individual">Individual</option>
+                    <option value="Dealer">Dealer</option>
+                    <option value="Trustmark Dealer">Trustmark Dealer</option>
+                </select>
+                <label for="transmission" class="home-label2">TRANSMISSION</label>
+                <select id="transmission" name="transmission" class="home-textinput03 input">
+                    <option value="" disabled selected hidden>    </option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automatic">Automatic</option>
+                </select>
+                <label for="owner" class="home-label3">OWNER</label>
+                <select id="owner" name="owner" class="home-textinput04 input">
+                    <option value="" disabled selected hidden>    </option>
+                    <option value="First Owner">First Owner</option>
+                    <option value="Second Owner">Second Owner</option>
+                    <option value="Third Owner">Third Owner</option>
+                    <option value="Fourth &amp; Above Owner">Fourth &amp; Above Owner</option>
+                    <option value="Test Drive Car">Test Drive Car</option>
+                </select>
+                <label for="mileage" class="home-label4">
+                  <span>MILEAGE(kmpl)</span>
+                  <br />
+                  <span></span>
+                </label>
+                <input type="number" id="mileage" name = "mileage" class="home-textinput05 input" />
+                <label for="engine" class="home-label5">ENGINE(CC)</label>
+                <input type="number" id="engine" name = "engine" class="home-textinput06 input" />
+                <label for="max power" class="home-label6">MAX POWER(bhp)</label>
+                <input type="number" id="max power" name = "max power" class="home-textinput07 input" />
+                <label for="seats" class="home-label7">SEATS</label>
+                <input type="number" id="seats" name = "seats"class="home-textinput08 input" />
+                <label for="years old" class="home-label8"><span>YEARS OLD</span></label>
+                <input type="number" id="years old" name = "years old" class="home-textinput09 input" />
+                <button type="submit" class="home-button button">
+                  <span class="home-text5">PREDICT</span>
+                </button>
+                
+              </form>
+              <span class="home-text6">CAR SELLING PRICE PREDICTION</span>
+              {% endblock output %}
+            </div>
+
+        </body>         
+
+</html>

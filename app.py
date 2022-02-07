@@ -10,7 +10,7 @@ model = pickle.load(open('./models/model.pkl','rb'))
 app = Flask(__name__)
 
 # home page route to take input values
-@app.route('/') #methods=['POST'])
+@app.route('/', methods=['POST', 'GET'])
 def home():
     
     return render_template('index.html')

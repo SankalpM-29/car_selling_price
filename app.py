@@ -3,6 +3,11 @@ import pandas as pd
 from flask import Flask, jsonify, request, render_template
 import pickle
 import preprocess
+import database
+import copy
+
+db = database.establish()
+
 
 # load model
 model = pickle.load(open('./models/model.pkl','rb'))
@@ -22,6 +27,8 @@ def predict():
     
     # getting all the inputted form values as a dict
     response = request.form.to_dict()
+    data = copy.deepcopy(response)
+    database.update(db, data)
     values = list(response.values())
     final_input = preprocess.get_input(values)
     output = model.predict(final_input)

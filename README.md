@@ -36,6 +36,8 @@ python app.py
 ├── data
 │   ├── Car_details.csv
 │   └── demo.gif
+├── database.py
+├── LICENSE
 ├── models
 │   └── model.pkl
 ├── notebooks
@@ -47,11 +49,12 @@ python app.py
 ├── requirements.yml
 ├── static
 │   └── index.css
-├── templates
-    ├── index.html
-    └── output.html
-    
-5 directories, 13 files
+└── templates
+    ├── index.html
+    └── output.html
+
+5 directories, 15 files
+
 ```
 
 ## Deployment on Heroku

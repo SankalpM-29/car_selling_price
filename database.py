@@ -2,7 +2,7 @@ import pymongo
 
 def establish():
 
-    DEFAULT_CONNECTION_URL = "mongodb+srv://sankalp:mongodb1357@cluster1.tajfw.mongodb.net/cardb?retryWrites=true&w=majority"
+    DEFAULT_CONNECTION_URL = "${{ secrets.DATABASE_URL }}"
     DB_NAME = "cardb"
 
     # Establish a connection with mongoDB

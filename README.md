@@ -54,7 +54,7 @@ python app.py
 5 directories, 13 files
 ```
 
-## Deployement on Heroku
+## Deployment on Heroku
 
 We will be using [gunicorn](https://gunicorn.org/) as our web server.
 
@@ -64,15 +64,19 @@ web: gunicorn <app_file_name>:app
 ```
 Login or signup to [Heroku](https://www.heroku.com/home) in order to create virtual app. You can either connect your github profile or download Heroku CLI to manually deploy this project.
 
+## Database
+To store new data inputted by user, we have used a NoSQL MongoDB database and hosted it on MongoDB Atlas. This stored data can be further used for training a better model.
+
 ## 🏁 Technology Stack
 
 * [scikit-learn](https://scikit-learn.org/)
 * [Heroku](https://www.heroku.com/home)
 * [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 * [gunicorn](https://gunicorn.org/)
+* [MongoDB](https://www.mongodb.com/)
 
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
-[<img target="_blank" src="https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/2.0.x/) [<img target="_blank" src="https://gunicorn.org/images/logo.jpg" width=280>](https://gunicorn.org/)[<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/)[<img target="_blank" src="https://seekvectorlogo.net/wp-content/uploads/2018/12/heroku-vector-logo.png" width=280>](https://www.heroku.com/home)
-
+[<img target="_blank" src="https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/2.0.x/) [<img target="_blank" src="https://gunicorn.org/images/logo.jpg" width=280>](https://gunicorn.org/)[<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/)[<img target="_blank" src="https://seekvectorlogo.net/wp-content/uploads/2018/12/heroku-vector-logo.png" width=280>](https://www.heroku.com/home)[<img target="_blank" src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" width=280>](https://www.mongodb.com/atlas/database)
+<br>
 <h1 align = 'center'> THANK YOU!!!! :smiley:</h1>

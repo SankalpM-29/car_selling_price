@@ -1,8 +1,9 @@
+import os
 import pymongo
 
 def establish():
 
-    DEFAULT_CONNECTION_URL = "${{ secrets.DATABASE_URL }}"
+    DEFAULT_CONNECTION_URL = f"{os.environ['DATABASE_URL']}"
     DB_NAME = "cardb"
 
     # Establish a connection with mongoDB

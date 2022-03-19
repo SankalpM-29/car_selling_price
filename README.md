@@ -11,6 +11,11 @@ Link: [https://car-selling1price.herokuapp.com/](https://car-selling1price.herok
   <img width="1000" height="600" src="data/demo.gif">
 </a>
 
+##### Data on Mongodb Atlas
+
+<img width="1000" height="600" src="data/mongodb_ss.png">
+
+
 ## :computer: Local Installation
 
 1. Clone this Repo. </br> </br>
